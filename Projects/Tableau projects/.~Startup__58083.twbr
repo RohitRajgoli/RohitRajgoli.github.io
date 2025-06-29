@@ -1,0 +1,2194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <NavigationAction />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Financial Data  (Startup_Data)' inline='true' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Startup_Data' name='excel-direct.1i3ehd1099rvb21c2zpl10yifur5'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/rohit/Desktop/Tableau Projects/Startup/Startup_Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2013 Profit]' />
+            <value name='[2013 Revenue]' />
+            <value name='[2014 Profit]' />
+            <value name='[2014 Revenue]' />
+            <value name='[2015 Profit]' />
+            <value name='[2015 Revenue]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Financial Data ].[2013 Profit]' />
+              <field name='[Financial Data ].[2013 Revenue]' />
+              <field name='[Financial Data ].[2014 Profit]' />
+              <field name='[Financial Data ].[2014 Revenue]' />
+              <field name='[Financial Data ].[2015 Profit]' />
+              <field name='[Financial Data ].[2015 Revenue]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.1i3ehd1099rvb21c2zpl10yifur5' name='Financial Data ' table='[&apos;Financial Data $&apos;]' type='table'>
+            <columns gridOrigin='A1:T1001:no:A1:T1001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='string' name='Industry' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='integer' name='Year Founded' ordinal='4' />
+              <column datatype='integer' name='Employees' ordinal='5' />
+              <column datatype='string' name='State' ordinal='6' />
+              <column datatype='string' name='City' ordinal='7' />
+              <column datatype='string' name='Metro Area' ordinal='8' />
+              <column datatype='real' name='2015 Revenue' ordinal='9' />
+              <column datatype='real' name='2015 Expenses' ordinal='10' />
+              <column datatype='real' name='2015 Profit' ordinal='11' />
+              <column datatype='real' name='2015 Growth %' ordinal='12' />
+              <column datatype='real' name='2014 Revenue' ordinal='13' />
+              <column datatype='real' name='2014 Expenses' ordinal='14' />
+              <column datatype='real' name='2014 Profit' ordinal='15' />
+              <column datatype='real' name='2014 Growth %' ordinal='16' />
+              <column datatype='real' name='2013 Revenue' ordinal='17' />
+              <column datatype='real' name='2013 Expenses' ordinal='18' />
+              <column datatype='real' name='2013 Profit' ordinal='19' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T1001:no:A1:T1001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Founded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Founded]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Year Founded</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employees</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employees]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Employees</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Metro Area]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>Metro Area</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Expenses]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>2015 Expenses</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Growth %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Growth %]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>2015 Growth %</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014 Expenses]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>2014 Expenses</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Growth %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014 Growth %]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>2014 Growth %</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2013 Expenses]</local-name>
+            <parent-name>[Financial Data ]</parent-name>
+            <remote-alias>2013 Expenses</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Profit Margin 2015' datatype='real' name='[Calculation_5019261797081812992]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='// Profit Margin 2015&#10;[Calculation_5053601744264155137] / [Calculation_5053601744264335362]' />
+      </column>
+      <column caption='Efficiency Score' datatype='real' name='[Calculation_5019261797082062849]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;2015 Profit&apos; THEN&#10;    [Pivot Field Values] / [Employees]&#10;END' />
+      </column>
+      <column caption='Total Revenue (2013-2015)' datatype='real' name='[Calculation_5019261797082230786]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF CONTAINS([Pivot Field Names], &apos;Revenue&apos;) THEN [Pivot Field Values] ELSE 0 END' />
+      </column>
+      <column caption='Total Profit (2013-2015)' datatype='real' name='[Calculation_5019261797082955779]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF CONTAINS([Pivot Field Names], &apos;Profit&apos;) THEN [Pivot Field Values] ELSE 0 END' />
+      </column>
+      <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+      </column>
+      <column caption='2015 Profit Value' datatype='real' name='[Calculation_5053601744264155137]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='// 2015 Profit Value&#10;{ FIXED  : &#10;    MAX(IF [Pivot Field Names] = &apos;2015 Profit&apos; THEN [Pivot Field Values] END)&#10;}' />
+      </column>
+      <column caption='2015 Revenue Value' datatype='real' name='[Calculation_5053601744264335362]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='// 2015 Revenue Value&#10;{ FIXED  : &#10;    MAX(IF [Pivot Field Names] = &apos;2015 Revenue&apos; THEN [Pivot Field Values] END)&#10;}' />
+      </column>
+      <column caption='2015-Profit' datatype='real' name='[Calculation_5053601744265248771]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;2015 Profit&apos; THEN [Pivot Field Values] ELSE NULL END' />
+      </column>
+      <column caption='2015-Revenue' datatype='real' name='[Calculation_5053601744265728004]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF CONTAINS([Pivot Field Names], &apos;2015&apos;) THEN [Pivot Field Values] ELSE NULL END' />
+      </column>
+      <column caption='Button Label' datatype='string' name='[Calculation_6088937079820066819]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;View Company Details&quot;' />
+      </column>
+      <column caption='Button Label 2' datatype='string' name='[Calculation_6088937079824482308]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Back to Overview&quot;' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year Founded]' role='dimension' type='quantitative' />
+      <column caption='Financial Data ' datatype='table' name='[__tableau_internal_object_id__].[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Button Label)' hidden='true' name='[Action (Button Label)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_6088937079820066819]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='/Users/rohit/Documents/My Tableau Repository/Data sources/#TableauTemp_12b1oa402ykisq1alxer21uuaoff.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/21/2025 07:47:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Financial Data </family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1213</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1213</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year Founded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year Founded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year Founded</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Financial Data </family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employees</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employees</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Financial Data </family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>309</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>604</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Metro Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Metro Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Metro Area</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Financial Data </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RGB_S2' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2015 Expenses</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2015 Expenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2015 Expenses</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Financial Data </family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2015 Growth %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2015 Growth %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2015 Growth %</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Financial Data </family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>438</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2014 Expenses</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2014 Expenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2014 Expenses</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Financial Data </family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1213</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2014 Growth %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2014 Growth %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2014 Growth %</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Financial Data </family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2013 Expenses</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[2013 Expenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2013 Expenses</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Financial Data </family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Pivot</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5696</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Financial Data _AFAF38C92E10499FB01A6B9E402D5D56]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;2013 Revenue&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2014 Revenue&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2015 Revenue&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2013 Profit&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2014 Profit&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2015 Profit&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='ID' />
+        <field-sort-custom-order field='Name' />
+        <field-sort-custom-order field='Industry' />
+        <field-sort-custom-order field='Description' />
+        <field-sort-custom-order field='Year Founded' />
+        <field-sort-custom-order field='Employees' />
+        <field-sort-custom-order field='State' />
+        <field-sort-custom-order field='City' />
+        <field-sort-custom-order field='Metro Area' />
+        <field-sort-custom-order field='2015 Expenses' />
+        <field-sort-custom-order field='2015 Growth %' />
+        <field-sort-custom-order field='2014 Expenses' />
+        <field-sort-custom-order field='2014 Growth %' />
+        <field-sort-custom-order field='2013 Expenses' />
+        <field-sort-custom-order field='Pivot Field Names' />
+        <field-sort-custom-order field='Pivot Field Values' />
+        <field-sort-custom-order field='Calculation_5019261797082062849' />
+        <field-sort-custom-order field='Calculation_5019261797082230786' />
+        <field-sort-custom-order field='Calculation_5019261797082955779' />
+        <field-sort-custom-order field='Calculation_5053601744256950272' />
+        <field-sort-custom-order field='Calculation_5053601744265248771' />
+        <field-sort-custom-order field='Calculation_5053601744265728004' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_6088937079819681792' />
+        <field-sort-custom-order field='Calculation_6088937079819931650' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Financial Data ' id='Financial Data _AFAF38C92E10499FB01A6B9E402D5D56'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2013 Profit]' />
+                  <value name='[2013 Revenue]' />
+                  <value name='[2014 Profit]' />
+                  <value name='[2014 Revenue]' />
+                  <value name='[2015 Profit]' />
+                  <value name='[2015 Revenue]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Financial Data ].[2013 Profit]' />
+                    <field name='[Financial Data ].[2013 Revenue]' />
+                    <field name='[Financial Data ].[2014 Profit]' />
+                    <field name='[Financial Data ].[2014 Revenue]' />
+                    <field name='[Financial Data ].[2015 Profit]' />
+                    <field name='[Financial Data ].[2015 Revenue]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.1i3ehd1099rvb21c2zpl10yifur5' name='Financial Data ' table='[&apos;Financial Data $&apos;]' type='table'>
+                  <columns gridOrigin='A1:T1001:no:A1:T1001:0' header='yes' outcome='2'>
+                    <column datatype='integer' name='ID' ordinal='0' />
+                    <column datatype='string' name='Name' ordinal='1' />
+                    <column datatype='string' name='Industry' ordinal='2' />
+                    <column datatype='string' name='Description' ordinal='3' />
+                    <column datatype='integer' name='Year Founded' ordinal='4' />
+                    <column datatype='integer' name='Employees' ordinal='5' />
+                    <column datatype='string' name='State' ordinal='6' />
+                    <column datatype='string' name='City' ordinal='7' />
+                    <column datatype='string' name='Metro Area' ordinal='8' />
+                    <column datatype='real' name='2015 Revenue' ordinal='9' />
+                    <column datatype='real' name='2015 Expenses' ordinal='10' />
+                    <column datatype='real' name='2015 Profit' ordinal='11' />
+                    <column datatype='real' name='2015 Growth %' ordinal='12' />
+                    <column datatype='real' name='2014 Revenue' ordinal='13' />
+                    <column datatype='real' name='2014 Expenses' ordinal='14' />
+                    <column datatype='real' name='2014 Profit' ordinal='15' />
+                    <column datatype='real' name='2014 Growth %' ordinal='16' />
+                    <column datatype='real' name='2013 Revenue' ordinal='17' />
+                    <column datatype='real' name='2013 Expenses' ordinal='18' />
+                    <column datatype='real' name='2013 Profit' ordinal='19' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+      <datasources>
+        <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+        <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+        </column>
+        <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]'>
+        <groupfilter function='level-members' level='[none:Industry:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]'>
+        <groupfilter function='level-members' level='[none:Metro Area:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]'>
+        <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]'>
+        <groupfilter function='level-members' level='[yr:Calculation_5053601744256950272:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 4 (generated)' name='[Action4_8EF3AFE1E1D849E8AF0D3A39C437ED2A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard - Overview' type='sheet' worksheet='KPI - Total 2015 Revenue' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard - Overview' />
+      </command>
+    </action>
+    <nav-action caption='Company details - Overview' name='[Action3_B32EBB0ACA8243ADA1E34FE87524CD66]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard - Company Detail' type='sheet' worksheet='Back to Overview' />
+      <params>
+        <param name='sheet' value='Dashboard - Overview' />
+      </params>
+    </nav-action>
+    <nav-action caption='Overview - Company Details' name='[Action3_C67C9267FC4442AAA2F52BBFA55E05F9]'>
+      <activation type='on-select' />
+      <source dashboard='Dashboard - Overview' type='sheet' worksheet='Go to Company Details' />
+      <params>
+        <param name='sheet' value='Dashboard - Company Detail' />
+      </params>
+    </nav-action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average 2015 Growth %'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Avg Growth % (2015)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column datatype='real' name='[2015 Growth %]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[2015 Growth %]' derivation='Avg' name='[avg:2015 Growth %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[avg:2015 Growth %:qk]' value='56' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[avg:2015 Growth %:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[avg:2015 Growth %:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F5876B0E-3378-4499-A02A-185BB6BFCCC1}' />
+    </worksheet>
+    <worksheet name='Back to Overview'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column caption='Button Label 2' datatype='string' name='[Calculation_6088937079824482308]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Back to Overview&quot;' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_6088937079824482308]' derivation='None' name='[none:Calculation_6088937079824482308:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]'>
+            <groupfilter function='member' level='[none:Name:nk]' member='&quot;Adarabarr&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='143' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Calculation_6088937079824482308:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BBEB1859-F328-495A-BEDA-46D04B74DF21}' />
+    </worksheet>
+    <worksheet name='Company selector filter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]'>
+            <groupfilter function='member' level='[none:Name:nk]' member='&quot;Abaftpractised&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4359D33B-5510-4544-AE38-B4595B654D1E}' />
+    </worksheet>
+    <worksheet name='Go to Company Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tahoma' fontsize='8'>View company Details</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column caption='Button Label' datatype='string' name='[Calculation_6088937079820066819]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;View Company Details&quot;' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_6088937079820066819]' derivation='None' name='[none:Calculation_6088937079820066819:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]'>
+            <groupfilter function='member' level='[none:Name:nk]' member='&quot;Abaftpractised&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='144' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Calculation_6088937079820066819:nk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Calculation_6088937079820066819:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{66FB111F-DC79-45E7-80EF-D310925D0647}' />
+    </worksheet>
+    <worksheet name='Industry - Profit Comparison'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Profit by Industry (2015)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column caption='2015-Profit' datatype='real' name='[Calculation_5053601744265248771]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;2015 Profit&apos; THEN [Pivot Field Values] ELSE NULL END' />
+            </column>
+            <column caption='2015-Revenue' datatype='real' name='[Calculation_5053601744265728004]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF CONTAINS([Pivot Field Names], &apos;2015&apos;) THEN [Pivot Field Values] ELSE NULL END' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Name]' derivation='Count' name='[cnt:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744265248771]' derivation='Sum' name='[sum:Calculation_5053601744265248771:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744265728004]' derivation='Sum' name='[sum:Calculation_5053601744265728004:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]' value='c&quot;£&quot;#,##0;-&quot;£&quot;#,##0' />
+            <format attr='text-format' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[cnt:Name:qk]' value='N' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]' value='Select Year'>
+              <formatted-text>
+                <run>Select Year</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[cnt:Name:qk]' />
+              <tooltip column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265728004:qk]' />
+              <text column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Industry:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>2015-Profit:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]>
+]]></run>
+                <run fontcolor='#787878'>2015 Revenue: </run>
+                <run bold='true'><![CDATA[ <[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265728004:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Employees :  </run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[cnt:Name:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</rows>
+        <cols>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]</cols>
+      </table>
+      <simple-id uuid='{6534DD8E-2BC7-402A-AA57-1945E23BD80A}' />
+    </worksheet>
+    <worksheet name='KPI - No of Startups'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Startups</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Name]' derivation='CountD' name='[ctd:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[ctd:Name:qk]' value='68' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[ctd:Name:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[ctd:Name:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{777FCE8C-0227-497E-AC0E-D034A73728A1}' />
+    </worksheet>
+    <worksheet name='KPI - Total 2015 Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Total Revenue (2015)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column caption='2015-Revenue' datatype='real' name='[Calculation_5053601744265728004]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF CONTAINS([Pivot Field Names], &apos;2015&apos;) THEN [Pivot Field Values] ELSE NULL END' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744265728004]' derivation='Sum' name='[sum:Calculation_5053601744265728004:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='22' />
+            <format attr='font-size' scope='cols' value='22' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='cols' value='dashed' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265728004:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2C0C0A3F-C230-4E24-BCFC-7BA8471FF23F}' />
+    </worksheet>
+    <worksheet name='KPI - Total Profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Total Profit(2015)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column caption='2015-Profit' datatype='real' name='[Calculation_5053601744265248771]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;2015 Profit&apos; THEN [Pivot Field Values] ELSE NULL END' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5053601744265248771]' derivation='Sum' name='[sum:Calculation_5053601744265248771:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-size' value='22' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='22' />
+            <format attr='font-size' scope='cols' value='22' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='cols' value='dashed' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Calculation_5053601744265248771:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{43A03FB4-F744-451F-B6D5-C04DA53EF8E2}' />
+    </worksheet>
+    <worksheet name='Map - Profit by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Startup Profit by State (2015)</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>This map shows the distribution of 2015 profit across U.S. states based on startup HQ location.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]'>
+            <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2015 Profit&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[Longitude (generated)]' field-type='quantitative' max='64186154.577376604' min='-57063887.036503971' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[Latitude (generated)]' field-type='quantitative' max='11654260.236888919' min='-16686110.421780912' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]' />
+              <size column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[Latitude (generated)]</rows>
+        <cols>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{01A50835-216D-44FB-990F-14BE43EB2583}' />
+    </worksheet>
+    <worksheet name='Trend - Revenue vs Profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Revenue vs Profit Trend (2013–2015)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+            <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+            </column>
+            <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year-Trunc' name='[tyr:Calculation_5053601744256950272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2013 Profit&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2013 Revenue&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2014 Profit&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2014 Revenue&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2015 Profit&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2015 Revenue&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]</column>
+            <column>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' />
+              <text column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' />
+              <lod column='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[tyr:Calculation_5053601744256950272:qk]</cols>
+      </table>
+      <simple-id uuid='{DC492693-B428-4215-9045-157FA7E3DBC5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard - Company Detail'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98136' id='3' name='Back to Overview' show-title='false' w='97538' x='1231' y='932'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='7' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98034' id='3' is-fixed='true' name='Back to Overview' show-title='false' w='97538' x='1231' y='983'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{311C2A57-1247-48F0-BEAE-7F95F28B1325}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard - Overview'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f6eee3' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='text-align' value='center' />
+          <format attr='font-weight' value='bold' />
+          <format attr='font-family' value='Trebuchet MS' />
+          <format attr='background-color' value='#e9ebe0' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-family' value='Tableau Book' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_41' value='center' />
+          <format attr='text-orientation' id='dash-text_41' value='0' />
+          <format attr='wrap' id='dash-text_41' value='auto' />
+          <format attr='vertical-align' id='dash-text_41' value='auto' />
+          <format attr='color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='600' minheight='900' minwidth='600' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Financial Data  (Startup_Data)' name='federated.0rc1mpg1syyza31a40mrp1mtg9ld' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0rc1mpg1syyza31a40mrp1mtg9ld'>
+        <column caption='Year' datatype='date' datatype-customized='true' name='[Calculation_5053601744256950272]' role='dimension' type='ordinal'>
+          <calculation class='tableau' formula='DATE(DATEPARSE ( &quot;yyyy&quot;, IF CONTAINS([Pivot Field Names], &quot;2013&quot;) THEN &quot;2013&quot;&#10;ELSEIF CONTAINS([Pivot Field Names], &quot;2014&quot;) THEN &quot;2014&quot;&#10;ELSE &quot;2015&quot;&#10;END )) ' />
+        </column>
+        <column datatype='string' name='[Industry]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Metro Area]' role='dimension' type='nominal' />
+        <column-instance column='[Industry]' derivation='None' name='[none:Industry:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Metro Area]' derivation='None' name='[none:Metro Area:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_5053601744256950272]' derivation='Year' name='[yr:Calculation_5053601744256950272:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='43' param='vert' type-v2='layout-flow' w='97334' x='1333' y='889'>
+            <zone h='4000' id='44' type-v2='title' w='97334' x='1333' y='889'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94222' id='28' param='horz' type-v2='layout-flow' w='97334' x='1333' y='4889'>
+              <zone h='94222' id='18' type-v2='layout-basic' w='97334' x='1333' y='4889'>
+                <zone h='94222' id='15' param='horz' type-v2='layout-flow' w='97334' x='1333' y='4889'>
+                  <zone h='94222' id='10' type-v2='layout-basic' w='97334' x='1333' y='4889'>
+                    <zone h='23333' id='3' name='KPI - Total 2015 Revenue' w='25666' x='1333' y='4889'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='23333' id='30' name='KPI - Total Profit' w='23001' x='26999' y='4889'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='23333' id='31' name='Average 2015 Growth %' w='25000' x='50000' y='4889'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='23333' id='32' name='KPI - No of Startups' w='23667' x='75000' y='4889'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='30000' id='33' name='Trend - Revenue vs Profit' w='73667' x='1333' y='28222'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='24778' id='35' name='Industry - Profit Comparison' w='73667' x='1333' y='58222'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='16111' id='38' name='Map - Profit by State' w='73667' x='1333' y='83000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='16000' id='34' name='Trend - Revenue vs Profit' pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' type-v2='color' w='23667' x='75000' y='42222'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='12778' id='40' name='Map - Profit by State' pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' type-v2='size' w='23667' x='75000' y='58222'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='8889' id='36' mode='slider' name='Industry - Profit Comparison' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]' type-v2='filter' w='23667' x='75000' y='28222'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='13667' id='37' name='Industry - Profit Comparison' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]' type-v2='filter' w='23667' x='75000' y='71000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='14444' id='39' name='Map - Profit by State' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]' type-v2='filter' w='23667' x='75000' y='84667'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5111' id='45' name='Go to Company Details' show-title='false' w='23667' x='75000' y='37111'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='48' param='vert' type-v2='layout-flow' w='97334' x='1333' y='889'>
+                <zone h='4000' id='44' type-v2='title' w='97334' x='1333' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='23333' id='3' is-fixed='true' name='KPI - Total 2015 Revenue' w='25666' x='1333' y='4889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='23333' id='30' is-fixed='true' name='KPI - Total Profit' w='23001' x='26999' y='4889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='23333' id='31' is-fixed='true' name='Average 2015 Growth %' w='25000' x='50000' y='4889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='23333' id='32' is-fixed='true' name='KPI - No of Startups' w='23667' x='75000' y='4889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='262' h='30000' id='33' is-fixed='true' name='Trend - Revenue vs Profit' w='73667' x='1333' y='28222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16000' id='34' name='Trend - Revenue vs Profit' pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' type-v2='color' w='23667' x='75000' y='42222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='38' h='5111' id='45' is-fixed='true' name='Go to Company Details' show-title='false' w='23667' x='75000' y='37111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8889' id='36' mode='slider' name='Industry - Profit Comparison' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]' type-v2='filter' w='23667' x='75000' y='28222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13667' id='37' mode='checkdropdown' name='Industry - Profit Comparison' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]' type-v2='filter' w='23667' x='75000' y='71000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='24778' id='35' is-fixed='true' name='Industry - Profit Comparison' w='73667' x='1333' y='58222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14444' id='39' mode='checkdropdown' name='Map - Profit by State' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]' type-v2='filter' w='23667' x='75000' y='84667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='137' h='16111' id='38' is-fixed='true' name='Map - Profit by State' w='73667' x='1333' y='83000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12778' id='40' name='Map - Profit by State' pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' type-v2='size' w='23667' x='75000' y='58222'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E35DABC8-478A-4AB0-BE02-F9A761D75C6F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI - Total 2015 Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CFB2CAF0-B69C-4992-AA59-AF9A423ED521}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD1168E2-BC42-43E0-AA08-2415340D93F4}' />
+    </window>
+    <window class='worksheet' name='Average 2015 Growth %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F91FAC9-489C-4EF8-A4C6-3B7836007968}' />
+    </window>
+    <window class='worksheet' name='KPI - No of Startups'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{603F98F4-9B9B-4615-B178-6FDE68EF2A18}' />
+    </window>
+    <window class='worksheet' name='Trend - Revenue vs Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1FD3583-2419-4C11-9176-6DF346D83171}' />
+    </window>
+    <window class='worksheet' name='Industry - Profit Comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[yr:Calculation_5053601744256950272:ok]' type='filter' />
+            <card param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2E2739EB-A86A-40DC-B224-6E76E10201F7}' />
+    </window>
+    <window class='worksheet' name='Map - Profit by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Industry:nk]' type='filter' />
+            <card param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Metro Area:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[sum:Pivot Field Values:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{263E754D-AC25-40FC-AD72-ABA12277703F}' />
+    </window>
+    <window class='dashboard' name='Dashboard - Overview'>
+      <viewpoints>
+        <viewpoint name='Average 2015 Growth %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Go to Company Details' />
+        <viewpoint name='Industry - Profit Comparison' />
+        <viewpoint name='KPI - No of Startups'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total 2015 Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map - Profit by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trend - Revenue vs Profit'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{87035733-0717-4A66-B253-E4FD9CA6E039}' />
+    </window>
+    <window class='worksheet' name='Go to Company Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D94BF71-8127-4BB7-9339-933DD660B5AB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard - Company Detail'>
+      <viewpoints>
+        <viewpoint name='Back to Overview' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{81C9CC1E-E412-4F6E-ADF0-27A49BA78252}' />
+    </window>
+    <window class='worksheet' name='Back to Overview'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{43C6656A-17BC-47C8-98FB-9D27B4895A5B}' />
+    </window>
+    <window class='worksheet' name='Company selector filter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0rc1mpg1syyza31a40mrp1mtg9ld].[none:Name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3C2F250-27CF-4761-98AA-632F3074D8CE}' />
+    </window>
+  </windows>
+</workbook>
