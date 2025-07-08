@@ -88,7 +88,7 @@ LIMIT 5;
  ORDER BY user_count DESC
  LIMIT 1;
  
-/* A) INVESTOR METRICS */   
+/* B) INVESTOR METRICS */   
 
 /*User Engagement
 	Objective: Investors want to know if users are still active and posting on Instagram or if they are making fewer posts.
