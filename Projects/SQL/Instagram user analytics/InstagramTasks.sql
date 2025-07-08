@@ -92,7 +92,7 @@ LIMIT 5;
 
 /*User Engagement
 	Objective: Investors want to know if users are still active and posting on Instagram or if they are making fewer posts.
-    Your task: calculate the average number of posts per user on instagram.
+    task: calculate the average number of posts per user on instagram.
 */
 SELECT(
 	(SELECT COUNT(*) FROM photos)/(SELECT COUNT(*) FROM users)
@@ -100,7 +100,7 @@ SELECT(
     
 /*Bots and fake accounts
 	Objective: Investors want to know if the platform is crowded with fake and dummy accounts.
-    Your task: Identify users (potential bots) who have liked every single every single photo on the site, as this is not typically possible for normal user.
+    task: Identify users (potential bots) who have liked every single every single photo on the site, as this is not typically possible for normal user.
 */    
 SELECT u.id, u.username
 FROM users u
