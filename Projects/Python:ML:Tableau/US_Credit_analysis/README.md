@@ -97,5 +97,5 @@ Created by Rohiy Rajgoli
 Feel free to connect or reach out on
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/rohit-rajgoli/)
-- 💻 [GitHub Portfolio](https://github.com/RohitRajgoli/RohitRajgoli.github.io)
+- 💻 [GitHub Portfolio](https://rohitrajgoli.github.io/RohitRajgoliPortfolio.github.io/)
 - 📧 rajgolirohit@gmail.com
