@@ -1,4 +1,4 @@
-# 📸 Instagram Clone Analytics (SQL Project)
+# 📸 Instagram User Analytics (SQL Project)
 
 This project uses MySQL to perform data analysis on an Instagram-like platform. It focuses on real-world business use cases — like user loyalty, engagement, hashtag research, and bot detection — helping teams make data-driven decisions.
 
